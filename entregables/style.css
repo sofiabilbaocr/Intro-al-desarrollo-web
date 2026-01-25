@@ -55,7 +55,7 @@ section {
     }
 
 .quiensoy{  display: grid;
-    grid-template-columns:1fr 2fr 1fr 
+    grid-template-columns:3fr
 }
 
 .fila-softs-lenguajes-idiomas{ display: grid; /*union de secciones en boxes diferentes*/
@@ -72,27 +72,37 @@ section {
 
 /*2.Media queries*/
 
-/*Moviles*/
-@media (max-width: 480px) {
-nav {grid-template-columns: 1fr;
-    gap: 10px;
-    justify-items: center;}
-    
-section {margin: 10px;
-    padding: 15px;}
-table {font-size: 13px;}
+
+/*Laptops*/
+@media (max-width: 1024px) {
+nav {display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    justify-items:center;
+    padding: 14px;}
+
+section {margin: 18px;
+    padding: 20px;
+}
+
+table {font-size: 14px;
+}
 
 .quiensoy{display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: 3fr;
+    gap: 20px;
 }
 .fila-edu-work{ display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;}
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
 
 .fila-softs-lenguajes-idiomas{ display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;}
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
 
 }
 
@@ -123,38 +133,33 @@ table {font-size: 14px;}
 
 }
 
-/*Laptops*/
-@media (max-width: 1024px) {
-nav {display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    justify-items:center;
-    padding: 14px;}
 
-section {margin: 18px;
-    padding: 20px;
-}
-
-table {font-size: 14px;
-}
+/*Moviles*/
+@media (max-width: 480px) {
+nav {grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;}
+    
+section {margin: 10px;
+    padding: 15px;}
+table {font-size: 13px;}
 
 .quiensoy{display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 .fila-edu-work{ display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: start;
-}
+    grid-template-columns: 1fr;
+    gap: 10px;}
 
 .fila-softs-lenguajes-idiomas{ display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: start;
-}
+    grid-template-columns: 1fr;
+    gap: 10px;}
 
 }
+
+
+
 
 
 
