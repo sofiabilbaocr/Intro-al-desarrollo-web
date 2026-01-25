@@ -4,8 +4,6 @@ body{font-family: Tahoma;
     padding: 0;
 }
 
-
-
 header{background-color:rgb(6, 70, 6);
     color: whitesmoke;
     text-align: center;
@@ -13,13 +11,11 @@ header{background-color:rgb(6, 70, 6);
     border: 1px solid #65a87c;
 }
 
-
 nav { background-color: #cfe8d6;
     padding: 18px; 
-    display: flex; /*Lo vuelve flex*/
-    justify-content: center; /*Pasa todo al centro de la pantalla*/
-    gap: 15px; /*Quedan espaciados 15px entre cada link*/
-    flex-wrap: wrap; /*Si no caben en la pantalla los manda abajo*/
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 13 px
   
 }
 
@@ -34,38 +30,47 @@ table {
   margin-top: 10px;
 }
 
-th, td {
-  border: 1px solid #14532d; 
-  padding: 10px;
-  text-align: justify;
-}
+    th, td {
+    border: 1px solid #14532d; 
+    padding: 10px;
+    text-align: justify;
+    }
 
-thead th{
-  background-color: #d1fae5; 
-  color: #14532d;
-  text-align: center;
-}
+    thead th{
+    background-color: #d1fae5; 
+    color: #14532d;
+    text-align: center;
+    }
 
-caption {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
+    caption {
+    font-style: bold;
+    margin-bottom: 8px;
+    }
 
 section {
-  background-color: #e6f4ea;
-  border: 1px solid #b7e4c7;
-  padding: 20px; 
-  margin: 20px; /*aumenta el margen de arriba, abajo y los lados de cada*/
+    background-color: #e6f4ea;
+    border: 1px solid #b7e4c7;
+    padding: 20px; 
+    margin: 20px; /*aumenta el margen de arriba, abajo y los lados de cada section*/
+    }
+
+#quiensoy
+{  display: grid;
+    grid-template-columns:0.5 fr 2 fr 10 fr 
 }
 
-.fila-softs-lenguajes{ display: flex;
-  gap: 20px;
+.fila-softs-lenguajes-idiomas{ display: grid; /*union de secciones en boxes diferentes*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /*espacio entre cada box*/
+    align-items: stretch;
 }
-    #lenguajes { flex: 1; }
-    #softskills { flex: 1; }
 
-.fila-edu-work{ display: flex;
-  gap: 20px;
+.fila-edu-work{ display: grid; /*union de secciones en boxes diferentes*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /*espacio entre cada box*/;
+    align-items: stretch;
 }
-    #educacion { flex: 1; }
-    #experiencialaboral { flex: 1; }
+
+
+
+
