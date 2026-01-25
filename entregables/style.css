@@ -76,7 +76,7 @@ section {
 @media (max-width: 480px) {
 nav {grid-template-columns: 1fr;
     gap: 10px;
-    text-align: center;}
+    justify-content: center;}
     
 section {margin: 10px;
     padding: 15px;}
@@ -98,7 +98,11 @@ table {font-size: 13px;}
 
 /*Tablets*/
 @media (max-width: 768px) {
-nav {grid-template-columns:repeat(2, 1fr);}
+nav {grid-template-columns:repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 12px;
+}
 
 section {margin: 15px;
     padding: 18px;}
@@ -118,3 +122,38 @@ table {font-size: 14px;}
     gap: 15px;}
 
 }
+
+/*Laptops*/
+@media (max-width: 1024px) {
+nav {display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    justify-content:center;
+    padding: 14px;}
+
+section {margin: 18px;
+    padding: 20px;
+}
+
+table {font-size: 14px;
+}
+
+.quiensoy{display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.fila-edu-work{ display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.fila-softs-lenguajes-idiomas{ display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+}
+
