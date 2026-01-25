@@ -15,7 +15,7 @@ nav { background-color: #cfe8d6;
     padding: 18px; 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 13 px
+    gap: 13px
   
 }
 
@@ -43,7 +43,7 @@ table {
     }
 
     caption {
-    font-style: bold;
+    font-weight: bold;
     margin-bottom: 8px;
     }
 
@@ -55,7 +55,7 @@ section {
     }
 
 .quiensoy{  display: grid;
-    grid-template-columns:0.5 fr 2 fr 10 fr 
+    grid-template-columns:1fr 2fr 1fr 
 }
 
 .fila-softs-lenguajes-idiomas{ display: grid; /*union de secciones en boxes diferentes*/
@@ -76,7 +76,7 @@ section {
 @media (max-width: 480px) {
 nav {grid-template-columns: 1fr;
     gap: 10px;
-    justify-content: center;}
+    justify-items: center;}
     
 section {margin: 10px;
     padding: 15px;}
@@ -100,7 +100,7 @@ table {font-size: 13px;}
 @media (max-width: 768px) {
 nav {grid-template-columns:repeat(2, 1fr);
     gap: 10px;
-    justify-content: center;
+    justify-items: center;
     padding: 12px;
 }
 
@@ -128,7 +128,7 @@ table {font-size: 14px;}
 nav {display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    justify-content:center;
+    justify-items:center;
     padding: 14px;}
 
 section {margin: 18px;
@@ -139,9 +139,8 @@ table {font-size: 14px;
 }
 
 .quiensoy{display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
-    align-items: center;
 }
 .fila-edu-work{ display: grid;
     grid-template-columns: 1fr 1fr;
