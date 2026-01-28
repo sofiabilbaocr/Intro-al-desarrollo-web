@@ -58,6 +58,7 @@ section {
     grid-template-columns:3fr
 }
 
+
 .fila-softs-lenguajes-idiomas{ display: grid; /*union de secciones en boxes diferentes*/
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /*espacio entre cada box*/
