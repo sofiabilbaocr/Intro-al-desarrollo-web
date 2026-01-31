@@ -11,8 +11,13 @@ header{background-color:rgb(6, 70, 6);
     border: 1px solid #65a87c;
 }
 
+<<<<<<< HEAD
 nav { background-color:#b7e4c7;
     padding: px; 
+=======
+nav { background-color: #feffff;
+    padding: 18px; 
+>>>>>>> origin/Entregable5
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 13px
