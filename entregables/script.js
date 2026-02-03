@@ -17,3 +17,13 @@ else {
 
 // Mostrar el saludo en un elemento HTML
 document.getElementById('saludo').innerText = saludo;
+
+
+
+//EJERCICIO 2: SALUDO
+document.getElementById("hideexperience").onclick = function () { //cuando hagan clic en el boton con id de hideexperience en este boton, ejecuta esto
+  document.getElementById("experiencialaboral").classList.toggle("d-none");          //classList es la parte del elemento HTML que deja ver y cambiar las clases desde JavaScript en esye caso a dn
+                                                                                    //el toggle es como un ON/OFF
+                                                                                    //d none es display none
+
+};
