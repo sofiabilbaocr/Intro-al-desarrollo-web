@@ -11,13 +11,8 @@ header{background-color:rgb(6, 70, 6);
     border: 1px solid #65a87c;
 }
 
-<<<<<<< HEAD
 nav { background-color:#b7e4c7;
-    padding: px; 
-=======
-nav { background-color: #feffff;
     padding: 18px; 
->>>>>>> origin/Entregable5
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 13px
@@ -27,30 +22,6 @@ nav { background-color: #feffff;
 nav a {color:black;
     text-decoration: none;
 }
-
-
-table {
-  width: 100%;
-  border-collapse: collapse; 
-  margin-top: 10px;
-}
-
-    th, td {
-    border: 1px solid #14532d; 
-    padding: 10px;
-    text-align: justify;
-    }
-
-    thead th{
-    background-color: #d1fae5; 
-    color: #14532d;
-    text-align: center;
-    }
-
-    caption {
-    font-weight: bold;
-    margin-bottom: 8px;
-    }
 
 section {
     background-color: #e6f4ea;
@@ -171,11 +142,19 @@ table {font-size: 13px;}
   body { background:whitesmoke !important; }  
 }
 
+.filtro{
+    display: none
+}
+
+body.darkmode { background-color: black; color: white;}
 
 
 
+#buscador {    background-color: #e6f4ea;
+    border: 1px solid #b7e4c7;
 
 
+}
 
 
 
