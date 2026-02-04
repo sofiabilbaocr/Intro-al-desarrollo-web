@@ -27,3 +27,19 @@ document.getElementById("hideexperience").onclick = function () { //cuando hagan
                                                                                     //d none es display none
 
 };
+
+
+//EJERCICIO 3: MODO
+const toggleButton = document.getElementById('modo');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  // Guardar preferencia (opcional)
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
