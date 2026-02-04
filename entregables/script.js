@@ -119,11 +119,31 @@ document.getElementById("modo").onclick = function () {
   }
 };
 
+//EJERCICIO 4: BUSCADOR
 
-//EJERCICIO 2: OCULTAR Informacion de contacto
-document.getElementById("hidecontact").onclick = function () { //cuando hagan clic en el boton con id de hideexperience en este boton, ejecuta esto
+document.addEventListener("keyup", e=>{
+    if(e.target.matches("#buscador"))
+
+        if(e.key ==="Escape")e.target.value = ""
+
+    document.querySelectorAll(".skills").forEach(skills=>{
+
+        skills.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+
+        ?skills.classList.remove("filtro")
+        :skills.classList.add("filtro") 
+
+
+    })
+})
+
+
+
+//EJERCICIO 5: OCULTAR INFORMACION DE CONTACTO
+document.getElementById("hidecontact").onclick = function () { //cuando hagan clic en el boton con id de hidecontacte en este boton, ejecuta esto
 document.getElementById("contacto").classList.toggle("d-none");          //classList es la parte del elemento HTML que deja ver y cambiar las clases desde JavaScript en esye caso a dn
                                                                                     //el toggle es como un ON/OFF
                                                                                     //d none es display none
-
 };
+
+

@@ -142,12 +142,19 @@ table {font-size: 13px;}
   body { background:whitesmoke !important; }  
 }
 
+.filtro{
+    display: none
+}
 
 body.darkmode { background-color: black; color: white;}
 
 
 
+#buscador {    background-color: #e6f4ea;
+    border: 1px solid #b7e4c7;
 
+
+}
 
 
 
