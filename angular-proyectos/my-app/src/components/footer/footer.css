@@ -1,0 +1,16 @@
+.foot{
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+  background: rgba(0,0,0,.18);
+}
+.foot__inner{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.muted{ color: var(--muted); }
+@media (max-width: 600px){
+  .foot__inner{ flex-direction: column; }
+}

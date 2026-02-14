@@ -1,0 +1,59 @@
+.hero{
+  padding: 86px 0 40px 0;
+}
+
+.hero__grid{
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.badge{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.title{
+  margin: 0 0 12px 0;
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: .2px;
+}
+
+.lead{
+  margin: 0 0 18px 0;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+.mini{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.photo{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.caption{
+  margin: 12px 0 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 900px){
+  .hero__grid{ grid-template-columns: 1fr; }
+  .title{ font-size: 34px; }
+}
+
+.h3{
+  color: rgba(231,238,252,0.98) !important;
+}

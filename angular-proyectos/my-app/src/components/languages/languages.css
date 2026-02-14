@@ -1,0 +1,14 @@
+.h3{ margin: 0 0 12px 0; font-size: 18px; }
+.chips{ display:flex; gap:10px; flex-wrap:wrap; }
+.chip{
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel2);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.h3{
+  color: rgba(231,238,252,0.98) !important;
+}
