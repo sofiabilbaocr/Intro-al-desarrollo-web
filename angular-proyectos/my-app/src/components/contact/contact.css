@@ -1,3 +1,2 @@
-.c{ padding: 18px; }
-.k{ margin: 0 0 8px 0; color:rgba(231,238,252,0.90);; font-size: 13px; }
-.v{ margin: 0; font-size: 16px; letter-spacing: .2px; color:rgba(231,238,252,0.90) }
+.label{ margin: 0 0 8px 0; color: rgba(231,238,252,0.86); font-size: 13px; }
+.value{ margin: 0; font-size: 16px; letter-spacing: .2px;color: rgba(231,238,252,0.86); } 

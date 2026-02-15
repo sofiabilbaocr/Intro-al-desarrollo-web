@@ -1,19 +1,19 @@
-.stack{ display: grid; gap: 14px; }
-.exp__top{
-  display:flex;
+.experienceList{ display: grid; gap: 14px; }
+
+.experienceHeader{
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
 }
-.h3{ margin: 0; font-size: 18px; }
-.p{ margin: 6px 0 0 0; color: var(--muted); }
-.ul{
+
+.itemTitle{ margin: 0; font-size: 18px; color: rgba(231,238,252,0.86); }
+.itemText{ margin: 6px 0 0 0; color: rgba(231,238,252,0.86); }
+
+.bulletList{
   margin: 14px 0 0 0;
   padding-left: 18px;
-  color: var(--muted);
+  color: rgba(231,238,252,0.86);
   line-height: 1.7;
 }
-.ul li{ margin: 8px 0; }
-.h3{
-  color: rgba(231,238,252,0.98) !important;
-}
+.bulletList li{ margin: 8px 0; }

@@ -1,11 +1,9 @@
-.h3{ margin: 0 0 12px 0; font-size: 18px; }
-.ul{
-  margin: 0;
+.itemTitle{ margin: 12px 0 6px 0; font-size: 18px; color: rgba(231,238,252,0.86); }
+
+.bulletList{
+  margin: 12px 0 0 0;
   padding-left: 18px;
-  color: var(--muted);
+  color: rgba(231,238,252,0.86);
   line-height: 1.7;
 }
-.ul li{ margin: 8px 0; }
-.h3{
-  color: rgba(231,238,252,0.98) !important;
-}
+.bulletList li{ margin: 8px 0; }

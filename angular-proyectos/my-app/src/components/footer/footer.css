@@ -1,16 +1,19 @@
-.foot{
-  border-top: 1px solid var(--border);
+.footer{
+  border-top: 1px solid rgba(255,255,255,0.10);
   padding: 18px 0;
   background: rgba(0,0,0,.18);
 }
-.foot__inner{
+
+.footerContent{
   display:flex;
   justify-content: space-between;
   gap: 12px;
-  color: var(--muted);
+  color: rgba(231,238,252,0.86);
   font-size: 13px;
 }
-.muted{ color: var(--muted); }
+
+.footerMuted{ color: rgba(231,238,252,0.86); }
+
 @media (max-width: 600px){
-  .foot__inner{ flex-direction: column; }
+  .footerContent{ flex-direction: column; }
 }
