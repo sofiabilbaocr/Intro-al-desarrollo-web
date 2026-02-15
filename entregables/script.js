@@ -47,13 +47,13 @@ document.getElementById("modo").onclick = function () {
 
   body.classList.toggle("dark-mode");
 
+  
   if (body.classList.contains("dark-mode")) {
   
     //Fondo
     body.classList.add("bg-dark", "text-white");
     body.classList.remove("bg-light");
   
-    
     
     // Botón
     btnmodo.classList.remove("btn-outline-success");
@@ -85,7 +85,9 @@ document.getElementById("modo").onclick = function () {
 
 
 
-  } else {
+  } 
+
+  else {
     // Botón
     btnmodo.classList.remove("btn-light");
     btnmodo.classList.add("btn-outline-success");
@@ -103,19 +105,15 @@ document.getElementById("modo").onclick = function () {
     contacto.classList.remove("bg-dark", "text-white");
     quiensoy.classList.remove("bg-dark", "text-white");
 
-
     // Tablas
     tEdu.classList.remove("table-dark");
     tEdu.classList.add("table-success", "table-striped-columns");
-
     tExp.classList.remove("table-dark");
     tExp.classList.add("table-success", "table-striped-columns");
 
     //Fondo
     body.classList.remove("bg-dark", "text-white");
     body.classList.add("bg-light");
-
-
   }
 };
 
