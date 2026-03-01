@@ -2,7 +2,7 @@
 <p class="sectionSubtitle">Fortalezas y herramientas dominadas</p>
 
 <p class="sectionSubtitle">
-  Hoy: {{ today | date:'mediumDate' }}
+  Computer skills hasta hoy: {{ today | date:'mediumDate' }}
 </p>
 <ul class="bulletList">
   <li *ngFor="let s of skillsList">{{ s | exclaim:2 }}</li>
