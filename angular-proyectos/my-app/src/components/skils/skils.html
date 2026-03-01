@@ -1,6 +1,13 @@
 <h2 class="sectionTitle">Skills</h2>
 <p class="sectionSubtitle">Fortalezas y herramientas dominadas</p>
 
+<p class="sectionSubtitle">
+  Hoy: {{ today | date:'mediumDate' }}
+</p>
+<ul class="bulletList">
+  <li *ngFor="let s of skillsList">{{ s | exclaim:2 }}</li>
+</ul>
+
 <div class="grid2">
   <div class="card">
     <h3 class="itemTitle">Soft skills</h3>

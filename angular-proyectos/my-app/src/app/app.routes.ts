@@ -1,3 +1,26 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { Hero } from '../components/hero/hero';
+import { Skils } from '../components/skils/skils';
+import { Experience } from '../components/experience/experience';
+import { Jobs } from '../components/experience/jobs/jobs';
+import { Volunteering } from '../components/experience/volunteering/volunteering';
+
+export const routes: Routes = [
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+
+  { path: 'about', component: Hero },
+  { path: 'skills', component: Skils },
+
+  {
+    path: 'experience',
+    component: Experience,
+    children: [
+      { path: 'jobs', component: Jobs },
+      { path: 'volunteering', component: Volunteering }, 
+      { path: '', redirectTo: 'jobs', pathMatch: 'full' }
+    ]
+  },
+
+  { path: '**', redirectTo: 'about' }
+];
