@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DataService } from '../../app/data';
+import { DataService } from '../../services/skills-service/data';
 import { CommonModule } from '@angular/common';
-import { ExclaimPipe } from '../../app/exclaim.pipe';
+import { ExclaimPipe } from '../../services/skills-service/exclaim.pipe';
 
 @Component({
   selector: 'app-skils',
@@ -13,7 +13,6 @@ import { ExclaimPipe } from '../../app/exclaim.pipe';
 export class Skils {
   skillsList: string[] = [];
   today = new Date();
-
   constructor(private data: DataService) {
     this.skillsList = this.data.skills;
   }
