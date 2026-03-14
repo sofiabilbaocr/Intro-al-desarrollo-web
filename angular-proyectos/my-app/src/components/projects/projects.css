@@ -1,19 +1,67 @@
-.experienceList { display: grid; gap: 14px; }
+section {
+  padding: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: rgba(231, 238, 252, 0.95);
+}
+
+.experienceList {
+  display: grid;
+  gap: 16px;
+}
+
+.projectCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
 
 .experienceHeader {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
-.itemTitle { margin: 0; font-size: 18px; color: rgba(231,238,252,0.86); }
-.itemText { margin: 6px 0 0 0; color: rgba(231,238,252,0.86); }
+.itemTitle {
+  margin: 0;
+  font-size: 18px;
+  color: rgba(231, 238, 252, 0.95);
+}
+
+.githubLink {
+  font-size: 13px;
+  color: #64b5f6;
+  text-decoration: none;
+  border: 1px solid #64b5f6;
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.githubLink:hover {
+  background: #64b5f6;
+  color: #0d1117;
+}
+
+.itemText {
+  margin: 10px 0 0 0;
+  color: rgba(231, 238, 252, 0.6);
+  font-size: 14px;
+}
 
 .bulletList {
-  margin: 14px 0 0 0;
+  margin: 10px 0 0 0;
   padding-left: 18px;
-  color: rgba(231,238,252,0.86);
+  color: rgba(231, 238, 252, 0.7);
   line-height: 1.7;
+  font-size: 14px;
 }
-.bulletList li { margin: 8px 0; }
+
+.bulletList li { margin: 4px 0; }
