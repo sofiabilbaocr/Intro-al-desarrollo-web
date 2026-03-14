@@ -1,8 +1,15 @@
 <section>
   <h2>Proyectos</h2>
-  <div *ngFor="let repo of repos">
-    <h3>{{ repo.name }}</h3>
-    <p>{{ repo.stargazers_count }}</p>
-    <a [href]="repo.html_url" target="_blank">Ver en GitHub</a>
+  <div class="experienceList">
+    <div *ngFor="let repo of repos">
+      <div class="experienceHeader">
+        <h3 class="itemTitle">{{ repo.name }}</h3>
+        <a [href]="repo.html_url" target="_blank">Ver en GitHub</a>
+      </div>
+      <p class="itemText">⭐ {{ repo.stargazers_count }} estrellas</p>
+      <ul class="bulletList" *ngIf="repo.description">
+        <li>{{ repo.description }}</li>
+      </ul>
+    </div>
   </div>
 </section>
