@@ -1,19 +1,16 @@
-.experienceList{ display: grid; gap: 14px; }
-
-.experienceHeader{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
+h2, p {
+  padding-left: 40px;
 }
 
-.itemTitle{ margin: 0; font-size: 18px; color: rgba(231,238,252,0.86); }
-.itemText{ margin: 6px 0 0 0; color: rgba(231,238,252,0.86); }
-
-.bulletList{
-  margin: 14px 0 0 0;
-  padding-left: 18px;
-  color: rgba(231,238,252,0.86);
-  line-height: 1.7;
+h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: rgba(231, 238, 252, 0.95);
+  padding-top: 40px;
 }
-.bulletList li{ margin: 8px 0; }
+
+.sectionSubtitle {
+  color: rgba(231, 238, 252, 0.5);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
