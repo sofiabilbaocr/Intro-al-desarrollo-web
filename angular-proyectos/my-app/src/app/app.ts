@@ -10,6 +10,7 @@ import { Hero } from '../components/hero/hero';
 import { Languages } from '../components/languages/languages';
 import { Navbar } from '../components/navbar/navbar';
 import { Skils } from '../components/skils/skils';
+import { Projects } from '../components/projects/projects';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { Skils } from '../components/skils/skils';
     Skils,
     Languages,
     Contact,
-    Footer
+    Footer,
+    Projects
   ],
   templateUrl: './app.html',
 })

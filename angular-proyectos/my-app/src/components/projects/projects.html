@@ -1,0 +1,15 @@
+<section>
+  <h2>Proyectos</h2>
+  <div class="experienceList">
+    <div class="projectCard" *ngFor="let repo of repos">
+      <div class="experienceHeader">
+        <h3 class="itemTitle">{{ repo.name }}</h3>
+        <a class="githubLink" [href]="repo.html_url" target="_blank">Ver en GitHub ↗</a>
+      </div>
+      <p class="itemText"> {{ repo.stargazers_count }} estrellas</p>
+      <ul class="bulletList" *ngIf="repo.description">
+        <li>{{ repo.description }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
