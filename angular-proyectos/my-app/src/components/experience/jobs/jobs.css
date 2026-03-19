@@ -1,19 +1,59 @@
-.experienceList{ display: grid; gap: 14px; }
+:host {
+  display: block;
+}
 
-.experienceHeader{
+.container {
+  max-width: 860px;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.experienceList {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.experienceHeader {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
-.itemTitle{ margin: 0; font-size: 18px; color: rgba(231,238,252,0.86); }
-.itemText{ margin: 6px 0 0 0; color: rgba(231,238,252,0.86); }
+.itemTitle {
+  margin: 0;
+  font-size: 18px;
+  color: rgba(231, 238, 252, 0.95);
+}
 
-.bulletList{
+.itemText {
+  margin: 6px 0 0 0;
+  color: rgba(231, 238, 252, 0.55);
+  font-size: 14px;
+}
+
+.bulletList {
   margin: 14px 0 0 0;
   padding-left: 18px;
-  color: rgba(231,238,252,0.86);
+  color: rgba(231, 238, 252, 0.75);
   line-height: 1.7;
 }
-.bulletList li{ margin: 8px 0; }
+.bulletList li { margin: 8px 0; }
+
+.tag {
+  font-size: 12px;
+  color: rgba(231, 238, 252, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}

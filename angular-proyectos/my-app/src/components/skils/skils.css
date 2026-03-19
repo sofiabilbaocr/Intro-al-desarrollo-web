@@ -1,9 +1,44 @@
-.itemTitle{ margin: 12px 0 6px 0; font-size: 18px; color: rgba(231,238,252,0.86); }
 
-.bulletList{
-  margin: 12px 0 0 0;
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: rgba(231, 238, 252, 0.95);
+}
+
+.sectionSubtitle {
+  color: rgba(231, 238, 252, 0.5);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.bulletList {
+  margin: 12px 0 24px 0;
   padding-left: 18px;
-  color: rgba(231,238,252,0.86);
+  color: rgba(231, 238, 252, 0.75);
   line-height: 1.7;
 }
-.bulletList li{ margin: 8px 0; }
+.bulletList li { margin: 8px 0; }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.itemTitle {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: rgba(231, 238, 252, 0.95);
+}
+.container {
+  padding: 40px 48px;
+}

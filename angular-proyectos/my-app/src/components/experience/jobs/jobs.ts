@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from '../../../app/data';
+import { DataService } from '../../../services/skills-service/data';
 import { CommonModule } from '@angular/common';
 
 @Component({
